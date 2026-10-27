@@ -1,0 +1,6 @@
+import type { FoodChoice, WineStyle } from '../domain/types';
+export const foods: Array<{ id: FoodChoice; label: string; note: string; mark: string }> = [
+  { id: 'mar', label: 'Del mar', note: 'Ligero, salino o de textura delicada', mark: '≈' }, { id: 'carne', label: 'Carne', note: 'Sabores profundos y reconfortantes', mark: '◆' }, { id: 'vegetal', label: 'Vegetal', note: 'Fresco, verde o de temporada', mark: '◒' }, { id: 'quesos', label: 'Quesos y curados', note: 'Intenso, salado y para compartir', mark: '◉' }, { id: 'explorar', label: 'Quiero explorar', note: 'Una recomendación abierta del momento', mark: '✦' }
+];
+export const flavorOptions = [{ id: 'fresco', label: 'Fresco' }, { id: 'intenso', label: 'Intenso' }, { id: 'especiado', label: 'Especiado' }, { id: 'cremoso', label: 'Cremoso' }, { id: 'dulce', label: 'Toque dulce' }] as const;
+export const wineStyles: Array<{ id: WineStyle; label: string; description: string }> = [{ id: 'blanco', label: 'Blanco', description: 'Vivo y luminoso' }, { id: 'tinto', label: 'Tinto', description: 'Sereno y envolvente' }, { id: 'espumoso', label: 'Espumoso', description: 'Tenso y festivo' }, { id: 'generoso', label: 'Generoso', description: 'Profundo y andaluz' }, { id: 'sorpresa', label: 'Sorpréndeme', description: 'Déjalo en manos del paladar' }];
